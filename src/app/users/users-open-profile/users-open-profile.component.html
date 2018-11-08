@@ -1,0 +1,6 @@
+<section id="user-profile" *ngIf="user">
+  <img [src]="user.avatar">
+  <div>User Id: {{user.id}}</div>
+  <div>First Name: {{user.first_name}}</div>
+  <div>Last Name: {{user.last_name}}</div>
+</section>

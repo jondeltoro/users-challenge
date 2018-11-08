@@ -1,0 +1,15 @@
+<form [formGroup]="recordForm">
+  <div>
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" formControlName="firstName" placeholder="John" maxlength="60" required>
+  </div>
+  <div>
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" formControlName="lastName" placeholder="Smith" maxlength="60" required>
+  </div>
+  <app-progress-bar [ngClass]="{invisible: !saving}"></app-progress-bar>
+  <div>
+    <button [disabled]="recordForm.invalid || saving" (click)="save()">Save</button>
+    <button [disabled]="saving" (click)="cancel()">Cancel</button>
+  </div>
+</form>
