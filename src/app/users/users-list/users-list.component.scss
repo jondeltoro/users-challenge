@@ -1,0 +1,15 @@
+table.table {
+  margin-bottom: 0;
+
+  caption {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .action-icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 0.5em 0 0.5em;
+    cursor: pointer;
+  }
+}
