@@ -3,6 +3,7 @@ import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { UsersApiService } from '../users-api.service';
 import { UserModel } from '../models/user.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-users-create',
@@ -19,6 +20,7 @@ export class UsersCreateComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private usersApi: UsersApiService,
     private changeDetector: ChangeDetectorRef,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -55,7 +57,7 @@ export class UsersCreateComponent implements OnInit, OnDestroy {
   }
 
   cancel() {
-
+    this.router.navigate([`/users/list`]);
   }
 
 }
