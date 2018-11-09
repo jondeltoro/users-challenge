@@ -1,3 +1,8 @@
 a {
   user-select: none;
 }
+
+li.next,
+li.prev {
+  width: 5em;
+}

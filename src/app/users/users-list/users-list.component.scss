@@ -1,15 +1,31 @@
-table.table {
-  margin-bottom: 0;
+section#user-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  caption {
-    padding-top: 0;
-    padding-bottom: 0;
+  div.form-group {
+    display: flex;
+    margin: 0.5em;
+    align-items: center;
+
+    label {
+      padding-right: 0.5em;
+    }
   }
 
-  .action-icon {
-    width: 18px;
-    height: 18px;
-    margin: 0 0.5em 0 0.5em;
-    cursor: pointer;
+  table.table {
+    margin-bottom: 0;
+
+    caption {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .action-icon {
+      width: 18px;
+      height: 18px;
+      margin: 0 0.5em 0 0.5em;
+      cursor: pointer;
+    }
   }
 }

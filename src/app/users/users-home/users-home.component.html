@@ -1,10 +1,18 @@
-<section>
-  <button routerLink="./create">Create Users</button>
-  <button routerLink="./list">See Users</button>
-  <button>Search Users</button>
-  <button>Register Users</button>
-  <button routerLink="/home">Home</button>
-  <button routerLink="/login">Login</button>
-  <button>Logout</button>
-</section>
+<nav>
+  <ul class="nav nav-tabs justify-content-center" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="./list" href="javascript:" role="tab">Users List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="./create" href="javascript:" role="tab">Create User</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="./search" href="javascript:" role="tab">Search Users</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="./register" href="javascript:" role="tab">Register
+        Users</a>
+    </li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>
