@@ -1,4 +1,18 @@
-<p>
-  login works!
-  <button routerLink="/users">Users</button>
-</p>
+<form [formGroup]="recordForm">
+  <h2>Please log in!</h2>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" name="email" formControlName="email" placeholder="john@email.com" maxlength="100"
+      required email>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" formControlName="password" placeholder="password"
+      maxlength="15" required>
+  </div>
+  <app-progress-bar [ngClass]="{invisible: !loggingIn}"></app-progress-bar>
+  <div id="action-buttons">
+    <button type="button" class="btn btn-primary" [disabled]="recordForm.invalid || loggingIn" (click)="login()">Log in</button>
+    <button type="button" class="btn btn-primary" [disabled]="loggingIn" routerLink="/register">Register</button>
+  </div>
+</form>
