@@ -8,7 +8,7 @@ import { SessionApiService } from './session-api.service';
 import { RegisterComponent } from './shared/register/register.component';
 
 @Injectable()
-class HasAccess implements CanActivateChild {
+export class HasAccess implements CanActivateChild {
   constructor(
     private router: Router,
     private sessionApi: SessionApiService
