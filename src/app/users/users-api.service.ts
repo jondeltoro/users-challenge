@@ -25,6 +25,24 @@ export class UsersApiService {
       );
   }
 
+  getUserListRecordCount(): Observable<number> {
+    return this.http.get(`${this.apiBaseUrl}/users?per_page=1`)
+      .pipe(
+        retry(3),
+        debounceTime(250),
+        map((data: UserListModel) => data.total_pages)
+      );
+  }
+
+  getFullUserList(count: number): Observable<UserListModel> {
+    return this.http.get(`${this.apiBaseUrl}/users?per_page=${count}`)
+      .pipe(
+        retry(3),
+        debounceTime(250),
+        map((data: UserListModel) => data)
+      );
+  }
+
   getUserById(id = 0): Observable<{ data: UserModel }> {
     return this.http.get(`${this.apiBaseUrl}/users/${id}?delay=1`)
       .pipe(
