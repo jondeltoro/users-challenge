@@ -1,0 +1,23 @@
+form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div.form-group {
+    width: 18em;
+  }
+
+  div#action-buttons {
+    button {
+      width: 5em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+  }
+
+  app-progress-bar {
+    width: 100%;
+  }
+}

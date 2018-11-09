@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  padding: 1em;
+
+  section#home-welcome {
+    text-align: center;
+    width: 100%;
+
+    img {
+      width: 50%;
+      padding: 1em;
+    }
+  }
+}

@@ -22,7 +22,7 @@ import { UsersOpenProfileComponent } from './users-open-profile/users-open-profi
     UsersListPaginationComponent,
     UsersCreateComponent,
     UsersListComponent,
-    UsersOpenProfileComponent
+    UsersOpenProfileComponent,
   ],
   exports: [],
   providers: [UsersApiService]
