@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class UsersCreateComponent implements OnInit, OnDestroy {
   public recordForm: FormGroup;
   public saving = false;
+  public saved = false;
   private savingSubscription = new Subscription();
 
   constructor(
@@ -43,9 +44,12 @@ export class UsersCreateComponent implements OnInit, OnDestroy {
       last_name: formValues.lastName
     };
     this.saving = true;
+    this.saved = false;
     this.recordForm.disable();
     this.savingSubscription = this.usersApi.saveUser(payload).subscribe(res => {
       this.saving = false;
+      this.saved = true;
+      this.recordForm.reset();
       this.recordForm.enable();
       this.changeDetector.markForCheck();
     },

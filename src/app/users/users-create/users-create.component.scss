@@ -1,8 +1,15 @@
-.ng-valid[required].ng-touched,
-.ng-valid.required.ng-touched {
-  border-left: 5px solid #8DC63F;
-}
+form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.ng-invalid.ng-touched:not(form) {
-  border-left: 5px solid #FF2800;
+  div#action-buttons {
+    button {
+      width: 5em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+  }
 }
