@@ -12,7 +12,7 @@
   </div>
   <app-progress-bar [ngClass]="{invisible: !loggingIn}"></app-progress-bar>
   <div id="action-buttons">
-    <button type="button" class="btn btn-primary" [disabled]="recordForm.invalid || loggingIn" (click)="login()">Log in</button>
-    <button type="button" class="btn btn-primary" [disabled]="loggingIn" routerLink="/register">Register</button>
+    <button type="button" class="btn btn-primary log-in" [disabled]="recordForm.invalid || loggingIn" (click)="login()">Log in</button>
+    <button type="button" class="btn btn-primary register" [disabled]="loggingIn" routerLink="/register">Register</button>
   </div>
 </form>

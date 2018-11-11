@@ -3,7 +3,7 @@
     <li class="page-item prev" [ngClass]="{'disabled': currentPage===1}">
       <a class="page-link" (click)="prevPage()" href="javascript:">Previous</a>
     </li>
-    <li class="page-item" *ngFor="let i of generateArray(totalPages)" [ngClass]="{'active': i===currentPage}">
+    <li class="page-item page-number" *ngFor="let i of generateArray(totalPages)" [ngClass]="{'active': i===currentPage}">
       <a class="page-link" (click)="selectPage(i)" href="javascript:">{{i}}</a>
     </li>
     <li class="page-item next" [ngClass]="{'disabled': currentPage===totalPages}">

@@ -15,7 +15,7 @@
   </div>
   <app-progress-bar [ngClass]="{invisible: !saving}"></app-progress-bar>
   <div id="action-buttons">
-    <button type="button" class="btn btn-primary" [disabled]="recordForm.invalid || saving" (click)="register()">Register</button>
-    <button type="button" class="btn btn-primary" [disabled]="saving" (click)="redirect()">Cancel</button>
+    <button type="button" class="btn btn-primary register" [disabled]="recordForm.invalid || saving" (click)="register()">Register</button>
+    <button type="button" class="btn btn-primary cancel"  [disabled]="saving" (click)="redirect()">Cancel</button>
   </div>
 </form>

@@ -1,14 +1,15 @@
 import { AppPage } from './app.po';
+import { browser } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('Open root path', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to users-challenge!');
+  it('should redirect to login page', () => {
+    page.navigateToRoot();
+    expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + '/login');
   });
 });
