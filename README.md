@@ -1,3 +1,13 @@
+#Heroku instructions:
+
+https://users-challenge.herokuapp.com/
+To login use this credentials:
+Email: eve.holt@reqres.in
+Password: cityslicka
+
+Some actions are not working anymore since they changed the api (https://reqres.in/)
+
+
 # UsersChallenge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.7.
