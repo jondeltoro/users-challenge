@@ -1,9 +1,11 @@
 #Heroku instructions:
 
 https://users-challenge.herokuapp.com/
+
 To login use this credentials:
-Email: eve.holt@reqres.in
-Password: cityslicka
+
+Email: `eve.holt@reqres.in`
+Password: `cityslicka`
 
 Some actions are not working anymore since they changed the api (https://reqres.in/)
 
